@@ -16,4 +16,4 @@ jobs:
         run: ls -la
         
       - name: Unit tests
-        run: ./gradlew testDebugUnitTest
+        run: chmod +x ./gradlew testDebugUnitTest
