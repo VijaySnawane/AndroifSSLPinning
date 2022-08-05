@@ -1,4 +1,4 @@
-name: Print Content Work flow
+name: Pull Request work flow
 on: [push]
 
 jobs:
@@ -33,10 +33,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Lint debug flavor
+      - name: Lint debug 
         run: bash ./gradlew lintDebug --stacktrace
       - name: Lint results
         uses: actions/upload-artifact@v1
         with:
-          name: app
+          name: Lint Report
           path: app/build/reports/lint-results-debug.html
