@@ -41,14 +41,7 @@ jobs:
           name: Lint Report
           path: app/build/reports/lint-results-debug.html
           
-      - name : Retrieve Version
-        run: |
-         echo "::set-output name=VERSION_NAME::$(${{github.workspace}}/gradlew -q printVersionName)"
-         id: android_version
-         
-      - name: Get version
-        run: |
-         echo "version_name=${{steps.android_version.outputs.VERSION_NAME}}" >> $GITHUB_ENV
+
 
 
   apk:
