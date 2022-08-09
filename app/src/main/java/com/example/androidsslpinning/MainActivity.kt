@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var apiService: ApiService
 
+    var myvar:String?=null;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
