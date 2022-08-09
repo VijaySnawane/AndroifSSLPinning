@@ -40,6 +40,15 @@ jobs:
         with:
           name: Lint Report
           path: app/build/reports/lint-results-debug.html
+          
+      - name : Retrieve Version
+        run: |
+         echo "::set-output name=VERSION_NAME::$(${{github.workspace}}/gradlew -q printVersionName)"
+         id: android_version
+         
+      - name: Get version
+        run: |
+         echo "version_name=${{steps.android_version.outputs.VERSION_NAME}}" >> $GITHUB_ENV
 
 
   apk:
@@ -58,5 +67,5 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: App APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug-${{env.version_name}}.apk
 
