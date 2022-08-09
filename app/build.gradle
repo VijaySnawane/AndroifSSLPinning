@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
     id "org.sonarqube" version "3.4.0.2513"
     id 'com.google.gms.google-services'
+    id 'com.google.firebase.appdistribution'
 }
 
 sonarqube {
