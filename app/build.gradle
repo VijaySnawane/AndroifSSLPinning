@@ -4,6 +4,7 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id 'kotlin-kapt'
     id "org.sonarqube" version "3.4.0.2513"
+    id 'com.google.gms.google-services'
 }
 
 sonarqube {
@@ -69,5 +70,15 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    
+    // Import the Firebase BoM
+  implementation platform('com.google.firebase:firebase-bom:30.3.1')
+
+
+  // Add the dependency for the Firebase SDK for Google Analytics
+  // When using the BoM, don't specify versions in Firebase dependencies
+  implementation 'com.google.firebase:firebase-analytics-ktx'
+
+
 }
 
