@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "578612252303",
+    "project_id": "ci-pinning",
+    "storage_bucket": "ci-pinning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578612252303:android:54f784ad2ce96e1e2ceafa",
+        "android_client_info": {
+          "package_name": "com.example.androidsslpinning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578612252303-aiodvmusq9l6gojv4jmdtdef35c5mu0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ-UQ4eLd8YLeegatf9z5JaIohqQCipiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578612252303-aiodvmusq9l6gojv4jmdtdef35c5mu0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
