@@ -44,6 +44,14 @@ class MainActivity : AppCompatActivity() {
                 Log.d("TAG_TAG", "Failed :" + response.message())
                 findViewById<TextView>(R.id.result).text = response.body()?.name
                 findViewById<TextView>(R.id.result1).text = response.body()?.bio
+                 findViewById<TextView>(R.id.result).text = response.body()?.name
+                findViewById<TextView>(R.id.result1).text = response.body()?.bio
+                 findViewById<TextView>(R.id.result).text = response.body()?.name
+                findViewById<TextView>(R.id.result1).text = response.body()?.bio
+                 findViewById<TextView>(R.id.result).text = response.body()?.name
+                findViewById<TextView>(R.id.result1).text = response.body()?.bio
+                 findViewById<TextView>(R.id.result).text = response.body()?.name
+                findViewById<TextView>(R.id.result1).text = response.body()?.bio
             }
         })
     }
